@@ -1,0 +1,18 @@
+.btn {
+    background-color:var(--primary);
+    padding: 10px;
+    border:none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 300px;
+    height: 100px;
+    font-size: 40px;
+    font-weight: 600;
+    box-shadow: var(--box-shadow-btn);
+}
+
+
+.card {
+    border-radius: 20px;
+    background-color: white;
+}
