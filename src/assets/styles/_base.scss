@@ -8,6 +8,18 @@ h1, h2, h3, h4 {
 
 }
 
+h3{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 50px;  
+}
+
+h2{
+font-size: 48px;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -27,6 +39,3 @@ input, ::placeholder {
     font-family: var(--font-family);
 }
 
-.text-primary {
-    color: var(--primary);
-}

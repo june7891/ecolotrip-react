@@ -1,3 +1,7 @@
+@use '../mixins' as mixin;
+
+
+
 .offer {
     border-radius: 20px;
     box-shadow: var(--box-shadow-black);
@@ -11,5 +15,60 @@
 
 .travel {
     margin-top: 50px;
-    margin-bottom: 50px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
 }
+
+
+
+   
+
+.contentCard {
+	max-width: 1130px;
+	width: 100%;
+	.grid {
+		display: grid;
+		place-content: center;
+		grid-template-columns: repeat(3, 350px);
+		gap: 150px;
+		@include mixin.lg-lt {
+			grid-template-columns: repeat(2, 350px);
+		}
+		@include mixin.sm-lt {
+			grid-template-columns: repeat(1, 350px);
+		}
+	}
+}
+
+   
+
+
+    .cardContent {
+        position: relative;
+        min-height: 400px;
+        width: 400px;
+        cursor: pointer;
+
+        &:hover {
+            img {
+                transform: scale(1.1);
+            }
+        }
+        .imageContainer {
+            height: 500px;
+            border-radius: 15px;
+            margin: 25px;
+            overflow: hidden;
+          
+            img {
+                width: 100%;
+                height: 100%;
+                transition: 1s transform;
+            }
+        }
+    
+        .title {
+            height: 50px;
+        }
+    }
