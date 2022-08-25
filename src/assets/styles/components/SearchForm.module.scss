@@ -1,0 +1,103 @@
+.subtext {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.buttonOrange {
+  width: 150px;
+  height: 5vh;
+  font-weight: bold;
+  color: #fff;
+  background-color: #f9b532;
+  padding: 10px;
+  margin-top: 50px;
+  margin-bottom: 0;
+  border: #000 solid 1px;
+  border-radius: 15px;
+}
+
+.buttonGreen {
+  width: 150px;
+  height: 5vh;
+  font-weight: bold;
+  color: #fff;
+  background-color: #69dc8a;
+  padding: 10px;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+.buttonGreen {
+  border-right: 2px solid #fff;
+  background-color: #69dc8a;
+}
+
+.form {
+  position: relative;
+  width: 65%;
+  height: 300px;
+  margin: 0 auto;
+  border: #000 solid 3px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  background-color: var(--secondary);
+  box-shadow: var(--box-shadow-green);
+  button {
+    position:absolute;
+    top: 230px;
+    right: 200px;
+  }
+ 
+}
+ .travelInfoFirstRow {
+  
+    input {
+      width: 450px;
+      height: 50px;
+      font-size: 15px;
+      border: none;
+      border-radius: 18px;
+      padding: 20px;
+      margin: 10px;
+     
+      font-size: 15px;
+      font-weight: 500;
+      color: #000;
+      // outline: 0;
+    }
+  }
+ .travelInfoSecondRow {
+   margin-top: 15px;
+    input {
+      width: 200px;
+      height: 50px;
+      font-size: 15px;
+      border: none;
+      border-radius: 18px;
+      padding: 20px;
+      margin-top: 15px;
+      margin-left: 15px;
+      margin-right: 15px;
+      font-size: 15px;
+      font-weight: 500;
+      color: #000;
+     
+    }
+    img {
+      padding-top: 20px;
+      height: 60px;
+      cursor: pointer;
+      position: absolute;
+      top: 150px;
+      right: 100px;
+    }
+  }
