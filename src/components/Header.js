@@ -4,10 +4,15 @@ import logo from '../assets/images/logo.svg';
 import login from '../assets/images/login.svg';
 
 
+import { Link } from "react-router-dom";
+
 
 const Header = () => {
   return (
     <>
+  
+
+   
  <header className={`${styles.header} d-flex flex-row align-items-center p-15 `}>
       
  <div className={`${styles.menuToggle}`}>
@@ -16,12 +21,12 @@ const Header = () => {
             <span></span>
             <span></span>
             <ul className={styles.menu}>
-                        <a href="/">
-                            <li>Login</li>
-                        </a>
-                        <a href="/">
-                            <li>Sign Up</li>
-                        </a>
+                      
+                       <li><Link to="/">Accueil</Link></li>
+                       <li><Link to="/login">Login</Link></li>
+                       <li><Link to="/signup">Sign Up</Link></li>
+                       
+                       
                     </ul>
         </div>
 
@@ -31,13 +36,11 @@ const Header = () => {
       </div>
 
    <div className={`${styles.loginIcon}`}>
-        <img src={login} alt="login" />
+        <Link to="/login"><img src={login} alt="login" /></Link>
       </div>
-
  
 
     </header>
-
       </>   
   )
    

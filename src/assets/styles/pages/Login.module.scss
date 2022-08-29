@@ -1,0 +1,18 @@
+.inscription{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 600;
+    
+   p {
+    margin-left: 60px;
+    font-size: 28px;
+   }
+   a {
+    padding-left: 10px;
+    color: black;
+    text-decoration: none;
+   }
+ }
