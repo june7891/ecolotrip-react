@@ -14,11 +14,11 @@ const Login = () => {
 
         <input type="text" name="username/email" placeholder="pseudo/email"/>
         <input type="password" name="password" placeholder="mot de passe"/>
-        <p class="cross" ><input className="checkbox" type="checkbox" name="check" id=""/>se souvenir de moi</p>
+        <p className="cross" ><input className="checkbox" type="checkbox" name="check" id=""/>se souvenir de moi</p>
         <button className="btn-form" type="submit">Se connecter</button>
 
         <div className={styles.inscription}>
-        <p><a href="">mot de passe oublié</a></p>
+        <p><a href="/">mot de passe oublié</a></p>
         <p >pas de compte ? <Link to="/signup">s'inscrire</Link></p>
         </div>
     </form>

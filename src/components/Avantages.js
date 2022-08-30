@@ -9,7 +9,7 @@ const Avantages = () => {
     <>
          <section className={styles.avantage}>
         <h3 className='p-30'>Les avantages d'utiliser écolotrip</h3>
-        <div class={`${styles.avantages} d-flex align-items-center`}>
+        <div className={`${styles.avantages} d-flex align-items-center`}>
             <div className={`${styles.possible}`}>
                 <img src={iconPlane} alt="avion"/>
                 <p className='my-30'>Des destinations de voyages variées et attractives</p>
