@@ -9,6 +9,7 @@ import Gallery from './Gallery';
 import Contact from './Contact';
 import ListUsers from './ListUsers';
 import { Route, Routes } from "react-router-dom";
+import EditUserProfile from './EditUserProfile';
 
 const Site = () => {
   return (
@@ -22,6 +23,7 @@ const Site = () => {
         <Route path="gallery" element={<Gallery />} />
         <Route path="list" element={<ListUsers />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="user/:id/edit" element={<EditUserProfile />} />
         <Route
           path="*"
           element={<Error type="404">Page doesn't exist</Error>}

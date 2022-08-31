@@ -1,20 +1,20 @@
 import axios from 'axios'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
+import {Link} from 'react-router-dom';
 
 const ListUsers = () => {
 
-    const [users, setUsers] = useState({});
+    const [users, setUsers] = useState([]);
 
     useEffect(() => {
         getUsers();
     }, []);
 
     function getUsers() {
-    axios
-    .get("http://localhost/api/users")
-    .then(function (response) {
+    axios.get("http://localhost/api/users").then(function(response) {
       console.log(response.data);
       setUsers(response.data);
+      
     }); 
     }
 
@@ -36,11 +36,13 @@ const ListUsers = () => {
 
         <tbody>
             {users.map((user, key) =>
-            <tr key= {key}> 
+            <tr key={key}> 
             <td>{user.id}</td>
             <td>{user.username}</td>
             <td>{user.email}</td>
             <td>{user.account_created_at}</td>
+            <Link to={`user/${user.id}/edit`}>Edit</Link>
+            <button>Delete</button>
             </tr>
             )}
         </tbody>
