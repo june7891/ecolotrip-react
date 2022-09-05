@@ -17,7 +17,7 @@ export default function ListUser() {
     event.preventDefault();
 
     axios
-      .post("http://localhost/api/user/register", inputs)
+      .post("http://localhost/api/register", inputs)
       .then(function (response) {
         console.log(response.data);
         navigate("/login");

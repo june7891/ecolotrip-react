@@ -10,6 +10,7 @@ import Contact from './Contact';
 import ListUsers from './ListUsers';
 import { Route, Routes } from "react-router-dom";
 import EditUserProfile from './EditUserProfile';
+import Account from './Account';
 
 const Site = () => {
   return (
@@ -23,6 +24,7 @@ const Site = () => {
         <Route path="gallery" element={<Gallery />} />
         <Route path="list" element={<ListUsers />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="account" element={<Account />} />
         <Route path="user/:id/edit" element={<EditUserProfile />} />
         <Route
           path="*"
